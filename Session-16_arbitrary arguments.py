@@ -30,12 +30,12 @@ print()
 print()
 
 # both args and kwargs
-def shipping_label(*args,**kwargs):
+def shipping_label(*args,**kwargs):                             #kwargs always follows args
     for arg in args:
         print(arg, end=" ")
     print()
     if "street" in kwargs:
-        print(f"{kwargs.get('apt')}, {kwargs.get('street')}")
+        print(f"{kwargs.get('apt')}, {kwargs.get('street')}")   #must use single quotes ''
     else:
         print(f"{kwargs.get('apt')}")
     print(f"{kwargs.get('city')}, {kwargs.get('state')}")
