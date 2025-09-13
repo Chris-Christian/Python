@@ -1,4 +1,4 @@
-# Membership operators = a concise way to create lists in Python
+# List comprehensions = a concise way to create lists in Python
 #                          compact and easier to read than traditional loops
 #                          [expression for value in iterable if condition]
 
@@ -17,4 +17,5 @@ odd_nums=[num for num in nums if num%2==1]
 print(positive_nums)
 print(negative_nums)
 print(even_nums)
+
 print(odd_nums)
