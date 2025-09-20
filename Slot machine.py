@@ -29,7 +29,7 @@ def main():
     print("*************************")
 
     while balance>0:
-        print(f"Current balance: {balance}")
+        print(f"Current balance: {balance}Rs")
 
         bet=input("Place your bet amount: ")
         if not bet.isdigit():
@@ -62,3 +62,4 @@ def main():
 if __name__=='__main__':
 
     main()
+
