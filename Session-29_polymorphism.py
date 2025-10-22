@@ -40,4 +40,11 @@ class Pizza(Circle):
 shapes=[Circle(4),Square(5),Triangle(6,7),Pizza("Pepperoni",15)]   
 
 for shape in shapes:
+
     print(f"{shape.area()}cm²")
+
+# ABC → A base class you inherit from to make your class abstract.
+# @abstractmethod → A decorator that marks a method as abstract, meaning subclasses must override (implement) it.
+# Shape is an abstract class — you can’t create an object of it directly (Shape() would cause an error).
+# Any class that inherits from Shape must implement the area() method.
+# So if you forget to write def area(self): in a subclass (like Circle, Square, or Triangle), Python will raise an error — forcing you to define it.
